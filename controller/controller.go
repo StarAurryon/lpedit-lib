@@ -23,9 +23,9 @@ import "log"
 import "sync"
 import "time"
 
-import "github.com/StarAurryon/lpedit/hw"
-import "github.com/StarAurryon/lpedit/model/pod"
-import "github.com/StarAurryon/lpedit/model/pod/message"
+import "github.com/StarAurryon/lpedit-lib/hw"
+import "github.com/StarAurryon/lpedit-lib/model/pod"
+import "github.com/StarAurryon/lpedit-lib/model/pod/message"
 
 type Controller struct {
     pod          *pod.Pod

@@ -24,7 +24,7 @@ import "bytes"
 import "log"
 import "reflect"
 
-import "github.com/StarAurryon/lpedit/model/pod"
+import "github.com/StarAurryon/lpedit-lib/model/pod"
 
 type presetPedalPos struct {
     pid   uint32

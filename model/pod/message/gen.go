@@ -23,7 +23,7 @@ import "encoding/binary"
 import "math"
 import "reflect"
 
-import "github.com/StarAurryon/lpedit/model/pod"
+import "github.com/StarAurryon/lpedit-lib/model/pod"
 
 const (
     CurrentSet uint16 = 0xFFFF

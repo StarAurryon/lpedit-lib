@@ -23,7 +23,7 @@ import "fmt"
 import "log"
 import "reflect"
 
-import "github.com/StarAurryon/lpedit/model/pod"
+import "github.com/StarAurryon/lpedit-lib/model/pod"
 
 const (
     messageRead uint32  = 1073743882

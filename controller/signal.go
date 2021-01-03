@@ -18,7 +18,7 @@
 
 package controller
 
-import "github.com/StarAurryon/lpedit/model/pod/message"
+import "github.com/StarAurryon/lpedit-lib/model/pod/message"
 
 type Signal struct {
     message.ChangeType

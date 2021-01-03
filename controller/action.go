@@ -22,8 +22,8 @@ import "bytes"
 import "encoding/binary"
 import "fmt"
 
-import "github.com/StarAurryon/lpedit/model/pod"
-import "github.com/StarAurryon/lpedit/model/pod/message"
+import "github.com/StarAurryon/lpedit-lib/model/pod"
+import "github.com/StarAurryon/lpedit-lib/model/pod/message"
 
 func (c *Controller) InitPOD() {
     f := func() {
