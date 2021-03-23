@@ -19,38 +19,37 @@
 package pod
 
 type LPEObject interface {
-    GetParam(uint32) Parameter
-    GetParams() []Parameter
-    GetParamLen() uint16
-    GetName() string
-    LockData()
-    UnlockData()
+	GetParam(uint32) Parameter
+	GetParams() []Parameter
+	GetParamLen() uint16
+	GetName() string
+	LockData()
+	UnlockData()
 }
 
 type PedalBoardItem interface {
-    LPEObject
-    GetActive() bool
-    GetActive2() uint32
-    GetID() uint32
-    GetType() uint32
-    GetPos() (uint16, uint8)
-    GetPreset() *Preset
-    LockData()
-    SetActive(bool)
-    SetPos(uint16, uint8)
-    SetPosWithoutCheck(uint16, uint8)
-    SetType(uint32) error
-    SetType2(string, string)
+	LPEObject
+	GetActive() bool
+	GetActive2() uint32
+	GetID() uint32
+	GetType() uint32
+	GetPos() (uint16, uint8)
+	GetPreset() *Preset
+	SetActive(bool)
+	SetPos(uint16, uint8)
+	SetPosWithoutCheck(uint16, uint8)
+	SetType(uint32) error
+	SetType2(string, string)
 }
 
 type SortablePosPBI []PedalBoardItem
 
-func (s SortablePosPBI) Len() int           { return len(s) }
+func (s SortablePosPBI) Len() int { return len(s) }
 
 func (s SortablePosPBI) Less(i, j int) bool {
-    posI, _ := s[i].GetPos()
-    posJ, _ := s[j].GetPos()
-    return posI < posJ
+	posI, _ := s[i].GetPos()
+	posJ, _ := s[j].GetPos()
+	return posI < posJ
 }
 
-func (s SortablePosPBI) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
+func (s SortablePosPBI) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
